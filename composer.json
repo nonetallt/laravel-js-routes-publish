@@ -17,6 +17,13 @@
         "illuminate/support": "5.5.x",
         "illuminate/console": "5.5.x"
     },
+    "autoload": {
+        "psr-4": {
+            "Nonetallt\\Jsroute\\": "src/"
+        },
+        "files": [
+        ]
+    },
     "extra": {
         "laravel": {
             "providers": [
