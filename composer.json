@@ -1,6 +1,7 @@
 {
     "name": "nonetallt/jsroute",
     "description": "Publish Laravel routes to JavaScript",
+    "keywords": ["laravel", "javascript ", "js", "routes", "publish"],
     "license": "MIT",
     "authors": [
         {
@@ -8,7 +9,14 @@
             "email": "jyri.mikkola@pp.inet.fi"
         }
     ],
-    "require": {},
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=7.0",
+        "illuminate/routing": "5.5.x",
+        "illuminate/support": "5.5.x",
+        "illuminate/console": "5.5.x"
+    },
     "extra": {
         "laravel": {
             "providers": [
