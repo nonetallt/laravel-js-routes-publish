@@ -1,0 +1,21 @@
+{
+    "name": "nonetallt/jsroute",
+    "description": "Publish Laravel routes to JavaScript",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jyri Mikkola",
+            "email": "jyri.mikkola@pp.inet.fi"
+        }
+    ],
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nonetallt\\Jsroute\\JsrouteServiceProvider"
+            ],
+            "aliases": {
+            }
+        }
+    }
+}
