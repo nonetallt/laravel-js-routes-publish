@@ -74,7 +74,7 @@ npm install gulp --save-dev
 ```
 
 gulpfile.js
-```
+```javascript
 var gulp = require('gulp');
 var exec = require('child_process').exec;
 
