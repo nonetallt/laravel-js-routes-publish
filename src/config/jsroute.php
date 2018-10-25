@@ -3,7 +3,7 @@
 return 
 [
     // Determine where the output will be written
-    'path' => resource_path('assets/js/routes.js'),
+    'path' => resource_path('js/routes.js'),
 
     // Define the groups you don't wish to publish
     'exclude_middleware' => ['api'],
