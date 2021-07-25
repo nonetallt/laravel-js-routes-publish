@@ -14,10 +14,21 @@ class Jsroutes
 
     function generate(array $routes)
     {
+        $ref    = config('jsroute.js_reference', 'Route');
+
+        $use_bundler    = config('jsroute.use_bundler', false);
+
         $output = '';
+
+        if($use_bundler){
+            $output .= "import LaravelRoutes from 'laravel-js-routes'" . PHP_EOL;
+            $output .= "const {$ref} = new LaravelRoutes" . PHP_EOL;
+        }
+       
+        
         foreach($routes as $route)
         {
-            $output .= config('jsroute.js_reference', 'Route');
+            $output .= $ref;
             $output .= '.';
             $output .= strtolower($route->methods()[0]);
 
@@ -49,6 +60,12 @@ class Jsroutes
             $output .= ';';
             $output .= PHP_EOL;
         }
+
+        if($use_bundler){
+            $output .= "export default {$ref}";
+        }
+
+        
         return $output;
     }
 

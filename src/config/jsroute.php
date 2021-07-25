@@ -34,4 +34,10 @@ return
      * In this example, the js_reference should be 'Route'.
      */
     'js_reference' => 'Route',
+    
+    /*
+     * If you re using bundler like webpack , browserfiy .
+     * this will add import & export statement to final output .
+     */
+    'use_bundler' => false,
 ];
