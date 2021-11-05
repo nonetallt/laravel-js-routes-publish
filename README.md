@@ -1,3 +1,7 @@
+## DEPRECATION NOTICE
+This package has been deprecated. Please use the [laravel-publish-routes](https://github.com/nonetallt/laravel-publish-routes) package with [route-repository](https://github.com/nonetallt/route-repository) instead.
+
+
 # laravel-js-routes-publish
 
 This package allows you to run the jsroute:publish artisan command to generate a route file that can be used for front to back routing in JavaScript. Ment to be used with [laravel-js-routes](https://github.com/nonetallt/laravel-js-routes).
